@@ -47,7 +47,7 @@ internal class PacketEventsShowArmorStandUseCase(
             EntityTypes.ARMOR_STAND,
             Vector3d(
                 vector3d.x,
-                vector3d.y,
+                vector3d.y + 1.0,
                 vector3d.z
             ),
             bukkitLocation.pitch,
