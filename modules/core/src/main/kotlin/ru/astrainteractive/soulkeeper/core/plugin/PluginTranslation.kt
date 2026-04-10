@@ -19,18 +19,18 @@ class PluginTranslation(
     @Serializable
     data class Souls(
         @SerialName("days_ago_format")
-        private val daysAgoFormat: StringDesc.Raw = StringDesc.Raw("%time% дней назад"),
+        private val daysAgoFormat: StringDesc.Raw = StringDesc.Raw("%time% days ago"),
         @SerialName("hours_ago_format")
-        private val hoursAgoFormat: StringDesc.Raw = StringDesc.Raw("%time% часов назад"),
+        private val hoursAgoFormat: StringDesc.Raw = StringDesc.Raw("%time% hours ago"),
         @SerialName("minutes_ago_format")
-        private val minutesAgoFormat: StringDesc.Raw = StringDesc.Raw("%time% минут назад"),
+        private val minutesAgoFormat: StringDesc.Raw = StringDesc.Raw("%time% minutes ago"),
         @SerialName("months_ago_format")
-        private val monthsAgoFormat: StringDesc.Raw = StringDesc.Raw("%time% месяцеев назад"),
+        private val monthsAgoFormat: StringDesc.Raw = StringDesc.Raw("%time% months ago"),
         @SerialName("seconds_ago_format")
-        private val secondsAgoFormat: StringDesc.Raw = StringDesc.Raw("%time% секунд назад"),
+        private val secondsAgoFormat: StringDesc.Raw = StringDesc.Raw("%time% seconds ago"),
         @SerialName("no_souls_on_page")
         private val noSoulsOnPage: StringDesc.Raw = prefix
-            .plus("&#db2c18Нет душ на странице %page%")
+            .plus("&#db2c18No souls on page %page%")
             .toRaw(),
         @SerialName("listing_format")
         private val listingFormat: StringDesc.Raw = StringDesc.Raw("&#b8b8b8%index%. ")
@@ -41,7 +41,7 @@ class PluginTranslation(
             .toRaw(),
         @SerialName("list_souls_title")
         val listSoulsTitle: StringDesc.Raw = prefix
-            .plus("&#42f596Список видимых вам душ:")
+            .plus("&#42f596List of visible souls:")
             .toRaw(),
         @SerialName("free_soul")
         val freeSoul: StringDesc.Raw = StringDesc.Raw("&#b50b05[FREE]"),
@@ -49,22 +49,22 @@ class PluginTranslation(
         val teleportToSoul: StringDesc.Raw = StringDesc.Raw("&#1db2b8[TP]"),
         @SerialName("soul_freed")
         val soulFreed: StringDesc.Raw = prefix
-            .plus("&#42f596Душа теперь свободна!")
+            .plus("&#42f596The soul is now free!")
             .toRaw(),
         @SerialName("could_not_free_soul")
         val couldNotFreeSoul: StringDesc.Raw = prefix
-            .plus("&#db2c18Не удалось освободить душу!")
+            .plus("&#db2c18Could not free the soul!")
             .toRaw(),
         @SerialName("soul_not_found")
         val soulNotFound: StringDesc.Raw = prefix
-            .plus("&#db2c18Душа не найдена!")
+            .plus("&#db2c18Soul not found!")
             .toRaw(),
         @SerialName("next_page")
-        val nextPage: StringDesc.Raw = StringDesc.Raw("&#42f596[>>ДАЛЬШЕ>>]"),
+        val nextPage: StringDesc.Raw = StringDesc.Raw("&#42f596[>>NEXT>>]"),
         @SerialName("prev_page")
-        val prevPage: StringDesc.Raw = StringDesc.Raw("&#42f596[<<РАНЬШЕ<<]"),
+        val prevPage: StringDesc.Raw = StringDesc.Raw("&#42f596[<<PREVIOUS<<]"),
         @SerialName("soul_of")
-        private val soulOf: StringDesc.Raw = StringDesc.Raw("&#317dd4Душа игрока &#31d43c%player%")
+        private val soulOf: StringDesc.Raw = StringDesc.Raw("&#317dd4Soul of player &#31d43c%player%")
     ) {
         fun listingFormat(
             index: Int,
@@ -110,23 +110,23 @@ class PluginTranslation(
     class General(
         @SerialName("reload")
         val reload: StringDesc.Raw = prefix
-            .plus("&#dbbb18Перезагрузка плагина")
+            .plus("&#dbbb18Reloading plugin")
             .toRaw(),
         @SerialName("reload_complete")
         val reloadComplete: StringDesc.Raw = prefix
-            .plus("&#42f596Перезагрузка успешно завершена")
+            .plus("&#42f596Reload completed successfully")
             .toRaw(),
         @SerialName("no_permission")
         val noPermission: StringDesc.Raw = prefix
-            .plus("&#db2c18У вас нет прав!")
+            .plus("&#db2c18You do not have permission!")
             .toRaw(),
         @SerialName("wrong_usage")
         val wrongUsage: StringDesc.Raw = prefix
-            .plus("&#db2c18Неверное использование!")
+            .plus("&#db2c18Incorrect usage!")
             .toRaw(),
         @SerialName("only_player_command")
         val onlyPlayerCommand: StringDesc.Raw = prefix
-            .plus("&#db2c18Эта команда только для игроков!")
+            .plus("&#db2c18This command is only for players!")
             .toRaw(),
     )
 
