@@ -6,7 +6,7 @@ version: '${version}'
 authors: [ "${authors}" ]
 author: "${author}"
 website: "${url}"
-api-version: 1.18
+api-version: 1.21
 softdepend: [ packetevents ]
 depend: [ ]
 loadbefore: [ Towny ]
