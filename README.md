@@ -16,6 +16,8 @@ Plugin to prevent XP and/or Items loss on your death. The items will not despawn
 
 All your inventory will be safely stored inside a soul until someone will take it(in case of soul is freed).
 
+If you want the text display above your/a freed soul, please install [PacketEvents](https://github.com/retrooper/packetevents), it is a soft dependency required for the armourstand text display.
+
 ## Screenshot
 
 ![souls.png](media%2Fsouls.png)
