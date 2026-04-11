@@ -1,6 +1,6 @@
 ![kotlin_version](https://img.shields.io/badge/kotlin-2.0.0-blueviolet?style=flat-square)
 ![kotlin_version](https://img.shields.io/badge/java-21-blueviolet?style=flat-square)
-![minecraft_version](https://img.shields.io/badge/minecraft-1.20.1-green?style=flat-square)
+![minecraft_version](https://img.shields.io/badge/minecraft-26.1.1-green?style=flat-square)
 ![platforms](https://img.shields.io/badge/platform-spigot-blue?style=flat-square)
 
 Originally originally [DeadSouls](https://github.com/Astra-Interactive/DeadSoulsKT)
