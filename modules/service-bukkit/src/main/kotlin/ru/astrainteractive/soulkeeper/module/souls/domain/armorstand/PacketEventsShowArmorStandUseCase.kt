@@ -59,11 +59,17 @@ internal class PacketEventsShowArmorStandUseCase(
         val metadata = WrapperPlayServerEntityMetadata(
             id,
             listOf(
-                // Invisible
+// Invisible
                 EntityData(
                     0,
                     EntityDataTypes.BYTE,
-                    (0x20 * 1).toByte()
+                    (0x20).toByte()
+                ),
+                // Marker flag - makes nametag display correctly
+                EntityData(
+                    15,
+                    EntityDataTypes.BYTE,
+                    (0x10).toByte()
                 ),
                 EntityData(
                     2,
