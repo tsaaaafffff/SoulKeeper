@@ -3,10 +3,11 @@
 ![minecraft_version](https://img.shields.io/badge/minecraft-1.20.1-green?style=flat-square)
 ![platforms](https://img.shields.io/badge/platform-spigot-blue?style=flat-square)
 
-Originally [DeadSouls](https://github.com/Astra-Interactive/DeadSoulsKT)
+Originally originally [DeadSouls](https://github.com/Astra-Interactive/DeadSoulsKT)
+Originally [SoulKeeper](https://github.com/Astra-Interactive/SoulKeeper)
 
 > [!CAUTION]
-> Java 21 and Paper 1.21.1 only supported! Use other versions on your own risk!
+> This plugin is built for Paper 26.1.1, older/newer versions MAY or MAY NOT work, USE AT YOUR OWN RISK!
 
 # SoulKeeper
 
@@ -49,15 +50,11 @@ If anything go wrong, please:
 1. Define a clear steps to reproduce
 2. Try to reproduce again in clear environment
 3. Obtain latest console logs
-4. [Join Discord](https://discord.com/invite/8fEzV2TDS2) and create a ticket in `support`
+4. Add and DM "smeechoo" on discord, I'll try assist you in any way I can.
 
 ## Feature request
 
-Almost the same as support.
-
-- Join discord
-- Create a ticket in `suggestions`
-- We will have a little talk and after that I will create issue on github
+Dm me "smeechoo" on discord, I'll try add in what you want.
 
 ## Incompatible plugin
 
