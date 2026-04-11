@@ -18,7 +18,7 @@ data class SoulsConfig(
         "Soul will be public after this time"
     )
     @SerialName("soul_free_after")
-    val soulFreeAfter: Duration = 2.days,
+    val soulFreeAfter: Duration = 10.minutes,
     @YamlComment(
         "[DEFAULT] - 14 days",
         "After this time soul will disappear entirely"
@@ -63,7 +63,10 @@ data class SoulsConfig(
             dustOptions = Particle.DustOptions(
                 color = 0xFFFFFF,
                 size = 2f
-            )
+            ),
+            offsetX = 0.1,
+            offsetY = 2.0,
+            offsetZ = 0.1,
         ),
         @SerialName("soul_xp")
         val soulXp: Particle = Particle(
@@ -72,7 +75,10 @@ data class SoulsConfig(
             dustOptions = Particle.DustOptions(
                 color = 0x00FFFF,
                 size = 2f
-            )
+            ),
+            offsetX = 0.1,
+            offsetY = 2.0,
+            offsetZ = 0.1,
         ),
         @SerialName("soul_gone")
         val soulGone: Particle = Particle(
@@ -81,7 +87,10 @@ data class SoulsConfig(
             dustOptions = Particle.DustOptions(
                 color = 0xFFFF00,
                 size = 32f
-            )
+            ),
+            offsetX = 0.1,
+            offsetY = 2.0,
+            offsetZ = 0.1,
         ),
         @SerialName("soul_created")
         val soulCreated: Particle = Particle(
@@ -90,7 +99,10 @@ data class SoulsConfig(
             dustOptions = Particle.DustOptions(
                 color = 0xeb3437,
                 size = 64f
-            )
+            ),
+            offsetX = 0.1,
+            offsetY = 2.0,
+            offsetZ = 0.1,
         ),
         @SerialName("soul_content_left")
         val soulContentLeft: Particle = Particle(
@@ -99,9 +111,12 @@ data class SoulsConfig(
             dustOptions = Particle.DustOptions(
                 color = 0xa103fc,
                 size = 32f
-            )
+            ),
+            offsetX = 0.1,
+            offsetY = 2.0,
+            offsetZ = 0.1,
         ),
-) {
+    ) {
         @Serializable
         data class Particle(
             val key: String,
@@ -111,7 +126,7 @@ data class SoulsConfig(
             @SerialName("offset_x")
             val offsetX: Double = 0.1,
             @SerialName("offset_y")
-            val offsetY: Double = 0.8,
+            val offsetY: Double = 2.0,
             @SerialName("offset_z")
             val offsetZ: Double = 0.1,
         ) {
