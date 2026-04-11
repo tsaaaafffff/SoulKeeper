@@ -127,7 +127,7 @@ data class SoulsConfig(
             @SerialName("offset_x")
             val offsetX: Double = 0.1,
             @SerialName("offset_y")
-            val offsetY: Double = 2.0,
+            val offsetY: Double = 0.5,
             @SerialName("offset_z")
             val offsetZ: Double = 0.1,
         ) {
