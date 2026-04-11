@@ -5,7 +5,7 @@ import ru.astrainteractive.klibs.mikro.core.logging.JUtiltLogger
 import ru.astrainteractive.klibs.mikro.core.logging.Logger
 import ru.astrainteractive.soulkeeper.di.RootModule
 
-class SoulKeeper :
+class SmeechSouls :
     LifecyclePlugin(),
     Logger by JUtiltLogger("SoulKeeper") {
     private val rootModule by lazy { RootModule(this) }
