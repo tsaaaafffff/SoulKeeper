@@ -4,12 +4,13 @@
 ![platforms](https://img.shields.io/badge/platform-spigot-blue?style=flat-square)
 
 Originally originally [DeadSouls](https://github.com/Astra-Interactive/DeadSoulsKT)
+
 Originally [SoulKeeper](https://github.com/Astra-Interactive/SoulKeeper)
 
 > [!CAUTION]
 > This plugin is built for Paper 26.1.1, older/newer versions MAY or MAY NOT work, USE AT YOUR OWN RISK!
 
-# SoulKeeper
+# SmeechSouls
 
 Plugin to prevent XP and/or Items loss on your death. The items will not despawn no matter what - lava, fire, void!
 
