@@ -7,6 +7,7 @@ import ru.astrainteractive.klibs.mikro.exposed.model.DatabaseConfiguration
 import java.io.File
 import kotlin.time.Duration
 import kotlin.time.Duration.Companion.days
+import kotlin.time.Duration.Companion.minutes
 
 @Serializable
 data class SoulsConfig(
