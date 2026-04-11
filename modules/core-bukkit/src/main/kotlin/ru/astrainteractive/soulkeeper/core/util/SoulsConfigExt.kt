@@ -36,7 +36,7 @@ private fun SoulsConfig.Particles.Particle.toBuilder(location: Location): Partic
     return ParticleBuilder(particle)
         .count(count)
         .location(location)
-        .offset(0.1, 0.1, 0.1)
+        .offset(offsetX, offsetY, offsetZ)
         .apply {
             if (localDustOptions != null) {
                 data(
