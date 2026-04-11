@@ -66,7 +66,7 @@ data class SoulsConfig(
                 size = 2f
             ),
             offsetX = 0.1,
-            offsetY = 2.0,
+            offsetY = 0.5,
             offsetZ = 0.1,
         ),
         @SerialName("soul_xp")
@@ -78,7 +78,7 @@ data class SoulsConfig(
                 size = 2f
             ),
             offsetX = 0.1,
-            offsetY = 2.0,
+            offsetY = 0.5,
             offsetZ = 0.1,
         ),
         @SerialName("soul_gone")
@@ -90,7 +90,7 @@ data class SoulsConfig(
                 size = 32f
             ),
             offsetX = 0.1,
-            offsetY = 2.0,
+            offsetY = 0.5,
             offsetZ = 0.1,
         ),
         @SerialName("soul_created")
@@ -102,7 +102,7 @@ data class SoulsConfig(
                 size = 64f
             ),
             offsetX = 0.1,
-            offsetY = 2.0,
+            offsetY = 0.5,
             offsetZ = 0.1,
         ),
         @SerialName("soul_content_left")
@@ -114,7 +114,7 @@ data class SoulsConfig(
                 size = 32f
             ),
             offsetX = 0.1,
-            offsetY = 2.0,
+            offsetY = 0.5,
             offsetZ = 0.1,
         ),
     ) {
