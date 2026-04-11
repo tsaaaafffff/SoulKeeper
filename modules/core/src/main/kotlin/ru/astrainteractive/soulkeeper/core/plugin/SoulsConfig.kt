@@ -101,13 +101,19 @@ data class SoulsConfig(
                 size = 32f
             )
         ),
-    ) {
+) {
         @Serializable
         data class Particle(
             val key: String,
             val count: Int,
             @SerialName("dust_options")
-            val dustOptions: DustOptions? = null
+            val dustOptions: DustOptions? = null,
+            @SerialName("offset_x")
+            val offsetX: Double = 0.1,
+            @SerialName("offset_y")
+            val offsetY: Double = 0.8,
+            @SerialName("offset_z")
+            val offsetZ: Double = 0.1,
         ) {
             @Serializable
             data class DustOptions(
