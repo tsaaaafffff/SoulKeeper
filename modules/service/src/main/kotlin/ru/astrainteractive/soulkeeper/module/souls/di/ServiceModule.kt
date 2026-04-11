@@ -77,7 +77,7 @@ class ServiceModule(
     )
     private val pickUpSoulService = ThrottleTickFlowService(
         coroutineContext = SupervisorJob() + coreModule.dispatchers.IO,
-        delay = flowOf(3.seconds),
+        delay = flowOf(1.seconds),
         executor = PickUpWorker(
             pickUpSoulUseCase = PickUpSoulUseCase(
                 dispatchers = coreModule.dispatchers,
