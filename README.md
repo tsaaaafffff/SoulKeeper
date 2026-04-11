@@ -1,5 +1,5 @@
 ![kotlin_version](https://img.shields.io/badge/kotlin-2.0.0-blueviolet?style=flat-square)
-![kotlin_version](https://img.shields.io/badge/java-21-blueviolet?style=flat-square)
+![kotlin_version](https://img.shields.io/badge/java-26-blueviolet?style=flat-square)
 ![minecraft_version](https://img.shields.io/badge/minecraft-26.1.1-green?style=flat-square)
 ![platforms](https://img.shields.io/badge/platform-spigot-blue?style=flat-square)
 
