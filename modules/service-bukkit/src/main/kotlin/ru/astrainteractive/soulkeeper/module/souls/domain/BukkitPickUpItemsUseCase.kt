@@ -21,7 +21,6 @@ internal class BukkitPickUpItemsUseCase(
     private val dispatchers: KotlinDispatchers
 ) : PickUpItemsUseCase,
     Logger by JUtiltLogger("SoulKeeper-PickUpItemsUseCase") {
-
     override suspend fun invoke(player: OnlineKPlayer, soul: ItemDatabaseSoul): Output {
         if (soul.items.isEmpty()) {
             info { "Soul ${soul.id} has no items to collect" }
@@ -30,6 +29,10 @@ internal class BukkitPickUpItemsUseCase(
         val bukkitPlayer = Bukkit.getPlayer(player.uuid)
         if (bukkitPlayer == null) {
             info { "Player ${player.uuid} is not online" }
+            return Output.SomeItemsRemain
+        }
+        if (bukkitPlayer.isDead) {
+            info { "Player ${player.uuid} is dead, skipping pickup" }
             return Output.SomeItemsRemain
         }
 
